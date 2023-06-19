@@ -242,7 +242,6 @@ p.especialidades{
   text-align: left;
   
   /*SERVICIOS con GRIDS*/
-
   .contenedor_servicios {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
@@ -289,6 +288,7 @@ p.especialidades{
 
    
    @media (max-width: 360px) and (max-width: 823px){
+    
     .portada_1{
     display: none;
     }
@@ -389,7 +389,7 @@ p.especialidades{
 
 .caja{
   width: 95%;
-  height
+  
 }
 
 .fotoaboga2{
@@ -399,20 +399,18 @@ p.especialidades{
 }
 
 /*MEDIA QUERIES TABLET*/
-
-@media (min-width: 411px) and (max-width: 823px) 
-{
+@media (min-width: 411px) and (max-width: 823px) {
  
   .portada_1{
     display: none;
-    
   }
+
  /*Portada*/
 
  img.portadamovil{
   display: flex;
-  
  }
+
 /*footer*/
   footer{
     position: fixed;
