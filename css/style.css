@@ -422,28 +422,30 @@ p.especialidades{
 
   footer p{
     margin-top: 3%;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
     padding: 2%;
+    height: 80px;
   }
 /*header*/
 
   header nav{
   position: fixed;
-  width: 100%;
+  width: 200%;
   top: 0;
   }
-
+header{
+  height: 68px;
+}
 
  /*menu tradicional*/
   nav ul li a{
     display: none;
   }
 
-  #logo img{
-    width: 180px;
-    
-   }
+  
+  
+
 
 /*icono redes sociales */
 
