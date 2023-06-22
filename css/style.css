@@ -15,27 +15,26 @@ body{
 
 header {
   background-color: #ffbf00;
-  height: 90px;
+  height: 95px;
   width: 100%;
   position: fixed;
   top: 0;
   font-family: 'Playfair Display', serif;
 }
 
-
+img.logo{
+  display: flex;
+  justify-content: center;
+}
 
 
  nav{
     height: 80px;
     background-color:#3a4754;
-    text-align: center;   
+     
   }
- #logo{
-    position: absolute;
-    top:20px;
-    padding-left: 40px;
-    margin-right: 10%;
-  }
+ 
+ 
 
   
 nav ul{
@@ -48,7 +47,7 @@ nav ul{
 }
 
 nav ul li{
-  float:left;
+  
   margin-top: 20px;
 
 }
@@ -94,6 +93,15 @@ div.redes-sociales{
   background-color:  #ffbf00;
 }
 
+button.navbar-toggler{
+font-size: 30px;
+background-color: #f2f2f2;
+margin-left: 40%;
+padding: 8px 7px 8px 7px;
+
+}
+
+
 button{
   background-color: #FFBF00;
 }
@@ -112,6 +120,7 @@ footer {
   background-color: #FFBF00;
   padding: 1%;
   width: 100%;
+  height: 10%;
   bottom: 0;
 
 
@@ -295,7 +304,7 @@ p.especialidades{
 
    img.portadamovil{
     display: flex;
-    
+  
    }
 /*footer*/
     footer{
@@ -306,7 +315,7 @@ p.especialidades{
 
     footer p{
       margin-top: 3%;
-      font-size: 10px;
+      font-size: 15px;
       font-weight: 500;
       padding: 2%;
     }
@@ -317,19 +326,16 @@ p.especialidades{
     header nav{
     position: fixed;
     width: 100%;
-    top: 0;
+    top: 0px;
     }
 
-
+    
+    
    /*menu tradicional*/
     nav ul li a{
       display: none;
     }
 
-    #logo img{
-      width: 40px;
-      
-     }
 
   /*icono redes sociales */
 
