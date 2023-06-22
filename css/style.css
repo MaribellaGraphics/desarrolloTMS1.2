@@ -25,13 +25,11 @@ header {
 
 
 
-/*
  nav{
     height: 80px;
     background-color:#3a4754;
     text-align: center;   
   }
-*/
  #logo{
     position: absolute;
     top:20px;
@@ -434,7 +432,7 @@ p.especialidades{
   width: 200%;
   top: 0;
   }
-  
+
 header{
   height: 68px;
 }
