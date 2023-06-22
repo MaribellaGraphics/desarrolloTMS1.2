@@ -24,44 +24,45 @@ header {
 
 img.logo{
   display: flex;
-  justify-content: center;
+  position: relative;
+  bottom: 10%;
 }
 
 
  nav{
+    display: flex;
+    justify-content: center;
     height: 80px;
     background-color:#3a4754;
+    
      
   }
  
- 
-
-  
 nav ul{
    list-style: none;
    display: flex;
    flex-direction: row;
-   justify-content:center;
    padding:15px;
- 
+   
 }
 
 nav ul li{
-  
   margin-top: 20px;
 
 }
 
 nav ul li a {
-    color: white;
+    display: absolute;
+    color: rgb(158, 230, 25);
     font-weight: bold;
     text-decoration: none;
-    font-size: 20px;
-    padding: 18px;
+    font-size: 18px;
+    padding: 15px;
     font-style: italic;
     
-    
-}
+   
+}   
+
 
 nav ul li a:hover{
   background-color: #ffbf00; 
@@ -94,12 +95,15 @@ div.redes-sociales{
 }
 
 button.navbar-toggler{
+position: absolute;
 font-size: 30px;
 background-color: #f2f2f2;
 margin-left: 40%;
 padding: 8px 7px 8px 7px;
 
+
 }
+
 
 
 button{
@@ -304,8 +308,33 @@ p.especialidades{
 
    img.portadamovil{
     display: flex;
+    width: 100%;
+    height: auto;
   
    }
+   img.logo{
+   position: absolute;
+   left: 50%;
+   top: 25%;
+   padding: 0;
+   width: 12%;
+  
+  }
+
+  nav.navbar{
+    position: relative; 
+    
+  }
+  navbar navbar-expand-lg navbar-light bg-light{
+    padding: 0px;
+  }
+
+  div.container-fluid{
+    padding: 0;
+    display: flex;
+    bottom: 0;
+  }
+
 /*footer*/
     footer{
       position: fixed;
@@ -313,20 +342,24 @@ p.especialidades{
       height: 20px;
     }
 
-    footer p{
-      margin-top: 3%;
-      font-size: 15px;
-      font-weight: 500;
+    p.footer_estrategias{
+      margin-top: 15%;
+      font-size: 20px;
       padding: 2%;
     }
 
     
 /*header*/
+   
+    .navbar{
+      padding: 0;
+    }
 
     header nav{
     position: fixed;
     width: 100%;
     top: 0px;
+    
     }
 
     
