@@ -4,6 +4,14 @@
     padding: 0;
  }
 
+ /*Variables*/
+
+ :root{
+    --color-primario: #3a4754;
+    --color-secundario: #ffbf00;
+
+ }
+
 body{
   overflow-x: hidden;
   position: relative;
@@ -14,12 +22,13 @@ body{
 /*ENCABEZADO*/
 
 header {
-  background-color: #ffbf00;
+  background-color: var(--color-secundario);
   height: 86px;
   width: 100%;
   position: fixed;
   top: 0;
   font-family: 'Playfair Display', serif;
+  z-index: 3;
 }
 
 img.logo{
@@ -35,7 +44,7 @@ img.logo{
     display: flex;
     justify-content: center;
     height: 60px;
-    background-color:#3a4754;
+    background-color:var(--color-primario);
     
     
     
@@ -62,7 +71,7 @@ nav ul li a {
 }   
 
 nav ul li a:hover{
-  background-color: #ffbf00; 
+  background-color: var(--color-secundario) 
 }
 
 .redes-sociales {
@@ -83,7 +92,7 @@ nav ul li a:hover{
 }
 
 .redes-sociales a:hover {
-  background-color:  #ffbf00;
+  background-color: var(--color-secundario)
 }
 
 button.navbar-toggler{
@@ -97,7 +106,7 @@ padding: 8px 7px 8px 7px;
 
 
 button{
-  background-color: #FFBF00;
+  background-color: var(--color-secundario)
 }
 
 img.portadamovil{
@@ -111,11 +120,11 @@ i.fa-solid{
 
 footer {
   position: fixed;
-  background-color: #FFBF00;
-  padding: 1%;
+  background-color: var(--color-secundario);
   width: 100%;
   height: 10%;
   bottom: 0;
+  left: 0;
 
 
 }
@@ -137,36 +146,38 @@ footer p {
   padding-left: 25%;
 }
 
-h2{
- display: block;
+h2.contactanos{
+  position: absolute;
  text-align: center;
  padding: 12px;
 }
 
-h3{
+h1{
   text-align: center;
+  font-size: 50%;
 }
-.mapa {
-  margin-bottom: 1em;
+ div.formulario{
+  position: relative;
   width: 100%;
-  padding: 0;
-  
-}
+  margin-top: 50%;
+  z-index: 0;
+ }
 
 .formulario {
-  background-color: #ffbf00;
-  padding: 20px;
-  flex-direction: row;
-  font-size:20px;
-  padding-bottom: 6em;
+  background-color: var(--color-secundario);
+  padding: 10%;
+  font-size:18px;
+  padding-bottom: 16%;
+  width: 500%;
+  
 }
 
 .formulario h3 {
   margin-top: 0;
+  
 }
 
 .formulario label {
-  display: block;
   margin-bottom: 10px;
 }
 
@@ -179,7 +190,7 @@ h3{
 }
 
 .formulario input[type="submit"] {
-  background-color: #3a4754;
+  background-color: var(--color-primario);
   padding: 10px 15px;
   border: none;
   cursor: pointer;
@@ -189,11 +200,11 @@ h3{
 }
 
 .formulario input[type="submit"]:hover {
-  background-color: #556677
+  background-color: var(--color-primario)
 }
 
 #asunto{
-  height: 70px;
+  height: 50px;
 }
 
 .form_contacto{
@@ -203,6 +214,21 @@ h3{
 
 }
 
+.contenedor_contacto{
+  display: flex;
+  flex-direction: row;
+  margin: 80;
+  margin-top: 6%;
+  z-index: 0;
+  
+  
+}
+
+div.mapa{
+  position: absolute;
+  width: 50%;
+  height: auto;
+}
 /* PAGINA EQUIPO */ 
 
 .contenedor_equipo {
@@ -211,10 +237,10 @@ h3{
 }
 
 .caja {
-  margin-top: 5px;
+  margin-top: 6px;
   width: 300px;
   padding: 30px;
-  background-color: #ffbf00;
+  background-color: var(--color-secundario);
   text-align: center;
   margin-bottom: 25px;
 }
@@ -293,9 +319,6 @@ margin-top: 75px;
 
   /*MEDIA QUERIES MOVILES*/
 
-   /*portada*/
-
-   
    @media (max-width: 360px) and (max-width: 823px){
     
     .portada_1{
@@ -438,10 +461,10 @@ p.especialidades{
   width: 60%;
 }
   }
-}
+
 
 /*MEDIA QUERIES TABLET*/
-@media (min-width: 411px) and (max-width: 823px) {
+@media (min-width: 393px) and (max-width: 823px) {
  
   .portada_1{
     display: none;
