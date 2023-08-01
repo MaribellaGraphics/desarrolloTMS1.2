@@ -22,8 +22,13 @@ body{
 /*ENCABEZADO*/
 
 header {
+<<<<<<< Updated upstream
   background-color: var(--color-secundario);
   height: 86px;
+=======
+  background-color: #ffbf00;
+  height: 93px;
+>>>>>>> Stashed changes
   width: 100%;
   position: fixed;
   top: 0;
@@ -31,16 +36,24 @@ header {
   z-index: 3;
 }
 
+<<<<<<< Updated upstream
 img.logo{
   display: flex;
   position: relative;
   bottom: 5%;
   width: 15%;
   padding: 1%
+=======
+/*logo*/
+img.logotms{
+  position: absolute;
+  width: 13%;
+  margin-left: 30px;
+>>>>>>> Stashed changes
 }
 
-
  nav{
+<<<<<<< Updated upstream
     display: flex;
     justify-content: center;
     height: 60px;
@@ -50,10 +63,22 @@ img.logo{
     
   }
  
+=======
+    height: 80px;
+     
+  }
+ 
+ button.navbar-toggler{
+  display:none;
+ }
+
+  
+>>>>>>> Stashed changes
 nav ul{
   position: absolute;
    list-style: none;
    display: flex;
+<<<<<<< Updated upstream
    left: 500px;
    justify-content: center;
    font-style: italic;
@@ -69,11 +94,33 @@ nav ul li a {
     font-size: 18px;
     padding: 15px;
 }   
+=======
+   flex-direction: row;
+   justify-content:center;
+   padding:15px;
+ 
+}
 
+nav ul li a {
+  position: 
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 18px;
+    font-style: italic;  
+}
+>>>>>>> Stashed changes
+
+/*menu*/
 nav ul li a:hover{
   background-color: var(--color-secundario) 
 }
 
+/*PORTADA*/
+img.portada_1{
+  padding-top: 1%;
+
+}
 .redes-sociales {
   position: relative;
   margin-inline: 40px;
@@ -99,7 +146,7 @@ button.navbar-toggler{
 position: absolute;
 font-size: 30px;
 background-color: #f2f2f2;
-margin-left: 40%;
+margin-left: 1%;
 padding: 8px 7px 8px 7px;
 }
 
@@ -319,9 +366,16 @@ margin-top: 75px;
 
   /*MEDIA QUERIES MOVILES*/
 
+<<<<<<< Updated upstream
    @media (max-width: 360px) and (max-width: 823px){
+=======
+   /*portada*/
+
+   
+   @media (max-width: 380px) and (max-width: 768px){
+>>>>>>> Stashed changes
     
-    .portada_1{
+    img.portada_1{
     display: none;
     }
 
@@ -329,6 +383,7 @@ margin-top: 75px;
 
    img.portadamovil{
     display: flex;
+<<<<<<< Updated upstream
     width: 100%;
     height: auto;
   
@@ -352,6 +407,15 @@ margin-top: 75px;
     padding: 0;
     display: flex;
     bottom: 0;
+=======
+   }
+   /*logo*/
+  
+img.logotms{
+    position: absolute;
+    width: 50%;
+    margin-left: 30px;
+>>>>>>> Stashed changes
   }
 
 /*footer*/
@@ -361,15 +425,24 @@ margin-top: 75px;
       height: 20px;
     }
 
+<<<<<<< Updated upstream
     p.footer_estrategias{
       margin-top: 15%;
       font-size: 20px;
       padding: 2%;
+=======
+
+    p.footer_estrategias{
+      margin-top: 3%;
+      font-size: 20%;
+      
+>>>>>>> Stashed changes
     }
 
    
     
 /*header*/
+<<<<<<< Updated upstream
    
     nav.navbar{
       height: 10%;
@@ -383,23 +456,28 @@ margin-top: 75px;
     
     }
 
+=======
+nav.navbar-light{
+
+}
+>>>>>>> Stashed changes
     
     
    /*menu tradicional*/
-    nav ul li a{
-      display: none;
-    }
+   
+      
+    
 
 
   /*icono redes sociales */
 
        i.fa-solid{
-      position: absolute;
-      display: flex;
-      padding-left: 70%;
-      padding-bottom: 20%;
-      margin: 10%;
-      font-size: 50px;
+        position: relative;
+        display: flex;
+        padding-left: 70%;
+        margin: 10%;
+        font-size: 70px;
+        margin-top: 50%;
     }
 
     /*Redes Sociales*/
@@ -464,7 +542,11 @@ p.especialidades{
 
 
 /*MEDIA QUERIES TABLET*/
+<<<<<<< Updated upstream
 @media (min-width: 393px) and (max-width: 823px) {
+=======
+@media (min-width: 390px) and (max-width: 823px) {
+>>>>>>> Stashed changes
  
   .portada_1{
     display: none;
@@ -473,7 +555,8 @@ p.especialidades{
  /*Portada*/
 
  img.portadamovil{
-  display: flex;
+  display: flex
+  
  }
 
 /*footer*/
@@ -501,13 +584,11 @@ p.especialidades{
   }
 
 header{
-  height: 68px;
+  height: 88px;
 }
 
  /*menu tradicional*/
-  nav ul li a{
-    display: none;
-  }
+  
 
   
   
@@ -574,6 +655,3 @@ width: 95%;
 .fotoaboga2{
 width: 60%;
 }
-}
-
-
